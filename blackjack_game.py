@@ -60,6 +60,7 @@ class Hand:
             self.aces += 1  # add to the number of aces in the hand
 
     def adjust_for_ace(self):
+        print("test")
         while self.value > 21 and self.aces:
             self.value -= 10
             self.aces -= 1

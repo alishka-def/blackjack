@@ -232,6 +232,7 @@ while True:
                 elif state == STATE_PLAYER:
                     if act == 'hit':
                         player_hand.add_card(deck.deal())
+                        player_hand.adjust_for_ace()
                         if player_hand.value > 21:
                             message = "You bust! Dealer wins"
                             chips.lose_bet()
