@@ -31,7 +31,7 @@ This project was created to:
 
 The following diagram shows how the GUI transitions through game states:
 
-![GUI State Flow](figures/fsm.png)
+<img src="figures/fsm.png" alt="GUI State Flow" width="25%">
 
 Figure 1 illustrates the finite state machine used to manage game logic. The game starts in the BETTING state, then moves through player and dealer actions before displaying the result and returning to the beginning. This design improves user experience and code maintainability.
 
